@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8f7f5;
+  --foreground: #1a1a1a;
+  --primary: #ef6c00;
+  --secondary: #2f2f2f;
+  --muted: #ece7e1;
+  --border: #d8cfc5;
+  --font-sans: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  --font-serif: 'Georgia', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.section-title {
+  @apply font-serif text-3xl md:text-4xl text-secondary text-balance;
+}
+
+.card {
+  @apply rounded-2xl border border-border bg-white p-6 shadow-sm;
+}
